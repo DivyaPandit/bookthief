@@ -1,0 +1,1 @@
+GENRE = ["Science fiction", "Satire", "Drama" , "Action", "Adventure" ,"Romance" , "Mystery" , "Horror" ,"Self help", "Fantasy"]
