@@ -1,4 +1,5 @@
 class BooksController < ApplicationController
+	# it will authenticate user on basis of authentication token
 	before_action :authenticate_user!
 
 	def index
@@ -9,7 +10,7 @@ class BooksController < ApplicationController
 	  	reviews_json = Review.search_reviews({search_string: search_string})
 	  end
 	  respond_to do |format|
-		format.json {render json: { books:books_json, authors: JSON.parse(authors_json), reviews_json: JSON.parse(reviews_json) }}
+		format.json {render json: { books:books_json, authors: authors_json, reviews: reviews_json }}
 	  end
 	end	
 end

@@ -12,9 +12,9 @@ FactoryGirl.define do
    end
 
    after(:create) do |author,evaluator|
-   	5.times.each do |i|
-	  FactoryGirl.create(:book,author:author)
-	end  
+      5.times.each do |i|
+	      FactoryGirl.create(:book,author:author)
+      end
    end
   end
 end
